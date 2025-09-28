@@ -1,0 +1,138 @@
+/* Header */
+
+.site-header {
+  background: #0b1220; 
+  color: white;
+  padding: 12px 0;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #33a0ff; 
+}
+
+/* Contenedor general: categorías + carrusel */
+.main-layout {
+  display: flex;
+  gap: 20px;         /* espacio entre categorías y carrusel */
+  max-width: 1200px; /* ancho máximo centrado */
+  margin: 20px auto;
+}
+
+/* Caja de categorías */
+.catbox {
+  width: 240px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.catbox__title {
+  background: #eeeeee;
+  color: #444;
+  font-weight: 700;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.catbox__list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+}
+
+.catbox__list li a {
+  display: block;
+  padding: 10px 12px;
+  color: #222;
+  text-decoration: none;
+}
+
+.catbox__list li a:hover {
+  background: #f5f7fa;
+}
+
+/* Submenú a la derecha */
+.has-submenu {
+  position: relative;
+}
+
+.has-submenu .submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;   /* aparece a la derecha */
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  min-width: 200px;
+  z-index: 100;
+}
+
+.has-submenu .submenu li a {
+  padding: 10px 14px;
+  color: #333;
+}
+
+.has-submenu:hover .submenu {
+  display: block; /* aparece al pasar el mouse */
+}
+
+.has-submenu .submenu li a:hover {
+  background: #e5e7eb;
+}
+
+/* Carrusel */
+.carousel {
+  flex: 1;           /* ocupa el resto del espacio */
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.carousel .slides img {
+  width: 100%;
+  display: none;
+}
+
+.carousel .slides img.active {
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
