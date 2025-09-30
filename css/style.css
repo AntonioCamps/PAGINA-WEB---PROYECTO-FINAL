@@ -1,5 +1,10 @@
 /* Header */
 
+body{
+  margin: 0;
+  background-color: white;
+}
+
 .site-header {
   background: #0b1220; 
   color: white;
@@ -183,9 +188,8 @@
 }
 
 .socials a img {
-  width: 28px;
+  width: 45px;
   margin-right: 8px;
-  filter: brightness(0) invert(1);
   transition: 0.2s;
 }
 
