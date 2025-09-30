@@ -1,0 +1,46 @@
+/* Sección ¿Quiénes somos?, Mision y Vision */
+.quienes {
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+
+.quienes-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  gap: 20px;
+}
+
+.quienes-texto {
+  flex: 1;
+}
+
+.quienes-texto h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #0b63e5;
+}
+
+.quienes-texto p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.quienes-imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.quienes-imagen img {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
