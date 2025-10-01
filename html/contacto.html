@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style4.css">
     <link rel="icon" href="../imagenes/novacomponentes.png">
-
 </head>
+
 <body>
 
    <header class="site-header">
@@ -29,11 +29,9 @@
   </div>
 </header>   
 
-</body>
-
 <section class="contacto">
   <h2>Contáctanos</h2>
-  <form class="contacto-form" action="#" method="post">
+  <form class="contacto-form" id="contactForm" action="#" method="post">
     <label for="nombre">Nombre</label>
     <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
@@ -48,7 +46,13 @@
 
     <button type="submit">Enviar</button>
   </form>
+
+    <!-- Mensaje oculto -->
+  <p id="successMessage" class="success-message">Mensaje enviado con éxito</p>
 </section>
+
+  <!-- Enlace al archivo JS -->
+  <script src="../js/script2.js"></script>
 
 <footer class="site-footer">
   <div class="footer-container">
@@ -82,7 +86,6 @@
     <p>© 2025 NovaComponentes. Todos los derechos reservados.</p>
   </div>
 </footer>
-    
-    
+
 </body>
 </html>
